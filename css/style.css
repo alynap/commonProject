@@ -275,7 +275,7 @@ h1{
 }
 
 #main .pas, .pan, .cake {
-    background-image: url('/images/background.jpg');
+    background-image: url('../images/background.jpg');
 }
 
 #main span{
@@ -378,7 +378,6 @@ ul li label{
     padding: 0px;
     border: 4px solid #bebdb8;
 }
-
 
 
 /* For Tablet view */
