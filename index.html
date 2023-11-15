@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/html5reset.css"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div role="region" class="title-box">
+        <h1>Pets</h1>
+        <a href = "#main">Skip to Main content</a>
+    </div>
+
+    
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox">
+        <span class="visually-hidden">Navigation</span>
+        <i class='fas fa-bars' id="open"></i>
+        <i class='fas fa-times' id="xout"></i>
+    </label>
+    <nav>
+      <header>Navigation</header>
+      <ul>
+          <li class="current"><a href = "index.html"><i class ='fas fa-paw'></i>Pets</a></li>
+          <li><a href = "recipes.html"><i class ='fas fa-pepper-hot'></i>Recipes</a></li>
+          <li><a href = "travel.html"><i class ='fas fa-suitcase'></i>Travel</a></li>
+      </ul>
+  </nav>
+
+  <div class="links"> 
+    <a href="#lu">Lucy</a><span>|</span>
+    <a href="#ro">Rosie</a><span>|</span>
+    <a href="#hon">Honey</a><span>|</span>
+    <a href="#so">Sofie</a><span>|</span>
+    <a href="#fi">Finn</a>
+  </div>
+
+    <main id = "main" tabindex="0">
+        <div class="lu" id="lu">
+            <h2>Lucy</h2>
+            <div class="imgPadding">
+                <img src="images/Lucy.JPG" width = "400" class="pics" alt="Calico with white, orange, and black coloring">
+            </div>
+            <div class="luText">
+            <p>Lucy is a 17-year-old calico that I’ve had since I was 5, she has pretty much grown up with me my whole life. 
+                Even though she’s old she’s still kickin’ it and enjoys running around the house at 4am.</P>
+            <p>
+                Her favorite foods include anything but her kibble. She enjoys sunbathing and long naps, 
+                along with lots of petting. However, she hates getting her stomach rubbed.</p>
+        </div>
+        <div class="luImages">
+            <h3>Photo Gallery</h3>
+            <div class="luimg">
+            <img src="images/Lucy_upsidedown.JPG" width ="200" alt = "Lucy laying on her back">
+            <img src="images/Lucy_sleeping.JPG"  width ="200" alt="Lucy curled up in her bed sleeping">
+            <img src="images/Lucy_sleepingpt2.JPG"  width ="200" alt="Lucy curled up sleeping">
+            <img src="images/Lucy_laying.JPG"  width ="200" alt="Lucy laying staring at the camera">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+        </div>
+            </div>
+            <div class="luLikes">
+            <h3 class="likes">Likes</h3>
+            <ul>
+                <li class="sleeping">Sleeping</li>
+                <li class="food">Food</li>
+                <li class="bed">Her bed</li>
+            </ul>
+        </div>
+        <div class="sleepingHover">
+            <h3>Sleeping</h3>
+            <img src="images/sleepingCat.gif" width ="200" alt = "Drawing where cat is sleeping">
+        </div>
+        <div class="foodHover">
+            <h3>Food</h3>
+            <img src="images/catEating.gif" width ="200" alt = "Drawing where cat is eating fish">
+        </div>
+        <div class="bedHover">
+            <h3>Her bed</h3>
+            <img src="images/catBed.gif" width ="200" alt = "Drawing where sleeping on a bed">
+        </div>
+            <!-- Maggie Holman-->
+        </div>
+
+        <div class="ro" id="ro">
+            <h2>Rosie</h2>
+            <div class="imgPadding">
+                <img src="images/rosie.PNG" width = "400" class="pics" alt="Brown and White Bichon/Shitzhu mix">
+            </div>
+            <div class="roText">
+            <p>Rosie is a small but super energetic dog. Whenever someone comes to the house she is 
+                very quick to run up and greet them. She loves to play fetch and will not leave you 
+                alone with her toys as she begs you to play with her.</P>
+            <p>
+                Rosie is also a wonderful lap dog. If you sit on the couch she is quick to find a 
+                spot next to you. If you wear a blanket over your legs, you’ll find her laying on 
+                your legs. She loves to cuddle and loves to be pet so she will always be right up 
+                on you.</p>
+            </div>
+            <div class="roImages">
+            <h3>Photo Gallery</h3>
+            <div class="roimg">
+            <img src="images/rosie_sleeping.jpg" width ="200" alt = "Rosie sleeping upside down">
+            <img src="images/rosie_blanket.jpg"  width ="200" alt="Rosie sleeping in between someones legs">
+            <img src="images/rosie_table.jpg"  width ="200" alt="Rosie laying on table">
+            <img src="images/rosie_towel.jpg"  width ="200" alt="Rosie wrapped in a towel">
+            <button id="prev1">Previous</button>
+            <button id="next1">Next</button>
+            </div>
+        </div>
+            <div class="roLikes">
+            <h3 class="likes">Likes</h3>
+            <ul>
+                <li class="treats">Treats</li>
+                <li class="fetch">Fetch</li>
+                <li class="cuddles">Cuddles</li>
+            </ul>
+        </div>
+        <div class="treatHover">
+            <h3>Treats</h3>
+            <img src="images/dogTreat.gif" width ="200" alt = "Dog treats">
+        </div>
+        <div class="fetchHover">
+            <h3>Fetch</h3>
+            <img src="images/dogFetch.gif" width ="200" alt = "Dog playing fetch">
+        </div>
+        <div class="cuddleHover">
+            <h3>Cuddles</h3>
+            <img src="images/dogCuddle.gif" width ="200" alt = "Animated drawing of dog">
+        </div>
+            <!-- Ethan Lee-->
+        </div>
+
+        <div class="hon" id="hon">
+            <h2>Honey</h2>
+            <div class="imgPadding">
+                <img src="images/honey_main.jpeg" width = "400" class="pics" alt="A medium-sized golden retriever with honey brown fur.">
+            </div>
+            <div class="honText">
+            <p>Honey’s favorite thing in the world is swimming. Even if it is the middle of January and 
+                half of the lake is frozen, Honey will be in the water. She is a smart swimmer, 
+                so when my brother and I go underwater, she will follow our air bubbles and be 
+                waiting for us when we come up for air.  </P>
+            <p>
+                While most dogs like to chase balls or sticks, Honey likes to chase rocks. 
+                She will even chase rocks into the water and stick her whole face in the 
+                water to try and find the rock thrown. Chasing rocks is her main form of 
+                exercise right now as she refuses to go on walks from our house. If we drive 
+                her to another spot and walk from there, Honey will go on a walk but she 
+                refuses to leave our driveway when we try to walk from home. Finally one other
+                 Honey-ism is that her safe place is bathtubs. Many times our family has woken 
+                 up in the middle of the night and found Honey is a bathtub. </p>
+            </div>
+            <div class="honImages">
+            <h3>Photo Gallery</h3>
+            <div class="honimg">
+            <img src="images/honey_sleeping.jpeg" width ="200" alt = "Honey taking a nap">
+            <img src="images/honey_rock.jpeg"  width ="200" alt="Honey playing with a rock">
+            <img src="images/honey_swimming.jpeg"  width ="200" alt="Honey swimming">
+            <img src="images/honey_smiling.jpeg"  width ="200" alt="Honey smiling">
+            <button id="prev2">Previous</button>
+            <button id="next2">Next</button>
+            </div>
+            </div>
+            <div class="honLikes">
+            <h3 class="likes">Likes</h3>
+            <ul>
+                <li class="rocks">Likes rocks</li>
+                <li class="foodHon">Likes food</li>
+                <li class="attention">Likes attention</li>
+            </ul>
+         </div>
+         <div class="rocksHover">
+            <h3>Rocks</h3>
+            <img src="images/rocksGif.gif" width ="200" alt = "Animated rocks">
+        </div>
+        <div class="foodHonHover">
+            <h3>Food</h3>
+            <img src="images/dogFoodgif.gif" width ="200" alt = "Vegetables falling into dog bowl">
+        </div>
+        <div class="attentionHover">
+            <h3>Attention</h3>
+            <img src="images/attentionDog.gif" width ="200" alt = "Dog wagging its tail">
+        </div>
+            <!-- Abbie Tooman-->
+         
+            </div>
+
+         <div class="so" id="so">
+            <h2>Sofie</h2>
+            <div class="imgPadding">
+                <img src="images/sofie1.JPG" width = "400" class="pics" alt="Beagle mix wearing glasses">
+            </div>
+                <div class="soText">
+            <p>Sofie is a 15-year-old Beagle mix.  Her favorite spot in the house is the living room couch. 
+                She loves to go outside, sometimes too much, leaving us to open the door for her constantly.
+                 Sofie loves freshly cut grass, she rolls around in it for hours after it gets cut. </P>
+            <p>
+                Sofie is very old, she joined our family when I was still in a car seat.
+                Sofie loves the weekends because she gets her favorite treat, a fried egg. 
+                Sofie loves long walks around the lake or on the trail, where she can be let free to 
+                run to her hearts content.</p>
+            </div>
+            <div class="soImages">
+            <h3>Photo Gallery</h3>
+            <div class="soimg">
+            <img src="images/sofie2.JPG" width ="200" alt = "Beagle sitting on favorite couch looking around">
+            <img src="images/sofie3.JPG"  width ="200" alt="Beagle laying down on chair.">
+            <img src="images/sofie4.JPG"  width ="200" alt="Beagle laying next to angry birds pillow ">
+            <img src="images/sofie5.JPG"  width ="200" alt="Beagle with two treats on paws">
+            <button id="prev3">Previous</button>
+            <button id="next3">Next</button>
+            </div>
+        </div>
+        <div class="soLikes">
+            <h3 class="likes">Likes</h3>
+            <ul>
+                <li class="eggs">Fried eggs</li>
+                <li class="peanut">Peanut butter</li>
+                <li class="bacon">bacon strips</li>
+            </ul>
+        </div>
+        <div class="eggsHover">
+            <h3>Eggs</h3>
+            <img src="images/eggs.gif" width ="200" alt = "Sunny side up egg">
+        </div>
+        <div class="peanutHover">
+            <h3>Peanut Butter</h3>
+            <img src="images/peanutbutter.gif" width ="200" alt = "Peanut butter tub">
+        </div>
+        <div class="baconHover">
+            <h3>Bacon Strips</h3>
+            <img src="images/bacon.gif" width ="200" alt = "Bacon cooking in a pan">
+        </div>
+            <!-- Jacob Timmerman-->
+         </div>
+
+     <div class="fi" id="fi">
+        <h2>Finn</h2>
+        <div class="imgPadding">
+            <img src="images/Finn_Halloween.jpg" width = "400" class="pics" alt="Finn wears a bat costume for halloween" >
+        </div>
+        <div class="finnText">
+        <p>Finn is a 7 year old grey cat. I feel like no one really knows cat breeds so I’m just gonna go with grey. 
+            He loves doing tricks for treats and his favorite is giving high fives to people. 
+            He might as well be a dog as he loves the outdoors and meeting new people. 
+            I can only describe him as goofy and chaotic. </P>
+        <p>
+        Finn’s biggest enemy is his vet. I don't know whether or not it’s because his 
+        vet is an MSU alum, but he doesn’t like him. He actually has to be prescribed 
+        a sedative before he goes to the vet office because he’ll suddenly act like 
+        he was never a house cat for 7 years. </p>
+        </div>
+        <div class="finnImages">
+        <h3>Photo Gallery</h3>
+            <div class="finnimg">
+                <img src="images/Finn_Shlumped.PNG" width ="200" alt = "Finn is exhausted after a long day of absolutely nothing. ">
+                <img src="images/Finn_Kitten.jpg"  width ="200" alt="A few days after we adopted Finn. He’s just posing for the camera.">
+                <img src="images/Finn_GOAT.PNG"  width ="200" alt="Finn dressed up as the king he is for Halloween ">
+                <img src="images/Finn_Goldenhr.PNG"  width ="200" alt="Finn showing off his green eyes during golden hour ">
+                <button id="prev4">Previous</button>
+                <button id="next4">Next</button>
+            </div>
+        </div>
+        <div class="finnLikes">
+        <h3 class="likes">Likes</h3>
+        <ul>
+            <li class="treatfinn">Treats</li>
+            <li class="rubs">Head Rubs</li>
+            <li class="cardboard">Sleeping in cardboard boxes</li>
+        </ul>
+    </div>
+    <div class="treatFinnHover">
+        <h3>Treats</h3>
+        <img src="images/catFood.gif" width ="200" alt = "Cat with its food bowl">
+    </div>
+    <div class="rubsHover">
+        <h3>Head Rubs</h3>
+        <img src="images/catRub.gif" width ="200" alt = "Cat getting its belly rubbed">
+    </div>
+    <div class="cardboardHover">
+        <h3>Sleeping in cardboard boxes</h3>
+        <img src="images/cardboard.gif" width ="200" alt = "Cat in a cardboard box">
+    </div>
+        <!-- Lauren Rodriguez-->
+     </div>
+    </main>
+</body>
+</html>
