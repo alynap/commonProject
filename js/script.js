@@ -1,4 +1,13 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () { 
+    // For reduced motion
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (reduceMotion.matches) {
+        var allGif = document.querySelectorAll('*');
+        allGif.forEach(function (element) {
+            element.classList.add('noAnimation');
+        });
+    }
+
     // For lucy
     const images = [
         'images/Lucy_upsidedown.JPG',
@@ -48,19 +57,25 @@ document.addEventListener('DOMContentLoaded', function () {
     foodHover.style.display = 'none';
     bedHover.style.display = 'none';
     sleeping.addEventListener('mouseover', function () {
-        sleepingHover.style.display = 'block';
+        if (!sleeping.classList.contains('noAnimation')) {
+             sleepingHover.style.display = 'block';
+        }
     });
     sleeping.addEventListener('mouseout', function () {
         sleepingHover.style.display = 'none';
     });
     food.addEventListener('mouseover', function () {
-        foodHover.style.display = 'block';
+        if (!food.classList.contains('noAnimation')) {
+            foodHover.style.display = 'block';
+        }
     });
     food.addEventListener('mouseout', function () {
         foodHover.style.display = 'none';
     });
     bed.addEventListener('mouseover', function () {
-        bedHover.style.display = 'block';
+        if (!bed.classList.contains('noAnimation')) {
+            bedHover.style.display = 'block';
+        }
     });
     bed.addEventListener('mouseout', function () {
         bedHover.style.display = 'none';
@@ -118,19 +133,25 @@ document.addEventListener('DOMContentLoaded', function () {
     fetchHover.style.display = 'none';
     cuddleHover.style.display = 'none';
     treats.addEventListener('mouseover', function () {
-        treatHover.style.display = 'block';
+        if (!treats.classList.contains('noAnimation')) {
+            treatHover.style.display = 'block';
+        }
     });
     treats.addEventListener('mouseout', function () {
         treatHover.style.display = 'none';
     });
     fetch.addEventListener('mouseover', function () {
-        fetchHover.style.display = 'block';
+        if (!fetch.classList.contains('noAnimation')) {
+            fetchHover.style.display = 'block';
+        }
     });
     fetch.addEventListener('mouseout', function () {
         fetchHover.style.display = 'none';
     });
     cuddles.addEventListener('mouseover', function () {
-        cuddleHover.style.display = 'block';
+        if (!cuddles.classList.contains('noAnimation')) {
+            cuddleHover.style.display = 'block';
+        }
     });
     cuddles.addEventListener('mouseout', function () {
         cuddleHover.style.display = 'none';
@@ -187,19 +208,25 @@ document.addEventListener('DOMContentLoaded', function () {
     rocksHover.style.display = 'none';
     foodHonHover.style.display = 'none';
     rocks.addEventListener('mouseover', function () {
-        rocksHover.style.display = 'block';
+        if (!rocks.classList.contains('noAnimation')) {
+            rocksHover.style.display = 'block';
+        }
     });
     rocks.addEventListener('mouseout', function () {
         rocksHover.style.display = 'none';
     });
     foodHon.addEventListener('mouseover', function () {
-        foodHonHover.style.display = 'block';
+        if (!foodHon.classList.contains('noAnimation')) {
+            foodHonHover.style.display = 'block';
+        }
     });
     foodHon.addEventListener('mouseout', function () {
         foodHonHover.style.display = 'none';
     });
     attention.addEventListener('mouseover', function () {
-        attentionHover.style.display = 'block';
+        if (!attention.classList.contains('noAnimation')) {
+            attentionHover.style.display = 'block';
+        }
     });
     attention.addEventListener('mouseout', function () {
         attentionHover.style.display = 'none';
@@ -256,19 +283,25 @@ document.addEventListener('DOMContentLoaded', function () {
     peanutHover.style.display = 'none';
     baconHover.style.display = 'none';
     eggs.addEventListener('mouseover', function () {
-        eggsHover.style.display = 'block';
+        if (!eggs.classList.contains('noAnimation')) {
+            eggsHover.style.display = 'block';
+        }
     });
     eggs.addEventListener('mouseout', function () {
         eggsHover.style.display = 'none';
     });
     peanut.addEventListener('mouseover', function () {
-        peanutHover.style.display = 'block';
+        if (!peanut.classList.contains('noAnimation')) {
+            peanutHover.style.display = 'block';
+        }
     });
     peanut.addEventListener('mouseout', function () {
         peanutHover.style.display = 'none';
     });
     bacon.addEventListener('mouseover', function () {
-        baconHover.style.display = 'block';
+        if (!bacon.classList.contains('noAnimation')) {
+            baconHover.style.display = 'block';
+        }
     });
     bacon.addEventListener('mouseout', function () {
         baconHover.style.display = 'none';
@@ -325,19 +358,25 @@ document.addEventListener('DOMContentLoaded', function () {
     rubsHover.style.display = 'none';
     cardboardHover.style.display = 'none';
     treatfinn.addEventListener('mouseover', function () {
-        treatfinnHover.style.display = 'block';
+        if (!treatfinn.classList.contains('noAnimation')) {
+            treatfinnHover.style.display = 'block';
+        }
     });
     treatfinn.addEventListener('mouseout', function () {
         treatfinnHover.style.display = 'none';
     });
     rubs.addEventListener('mouseover', function () {
-        rubsHover.style.display = 'block';
+        if (!rubs.classList.contains('noAnimation')) {
+            rubsHover.style.display = 'block';
+        }
     });
     rubs.addEventListener('mouseout', function () {
         rubsHover.style.display = 'none';
     });
     cardboard.addEventListener('mouseover', function () {
-        cardboardHover.style.display = 'block';
+        if (!cardboard.classList.contains('noAnimation')) {
+            cardboardHover.style.display = 'block';
+        }
     });
     cardboard.addEventListener('mouseout', function () {
         cardboardHover.style.display = 'none';
