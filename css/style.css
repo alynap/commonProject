@@ -71,6 +71,7 @@
 /* Nav */
 nav{
     position: fixed;
+    top: 0;
     left: -250px;
     width: 250px;
     height: 100%;
@@ -227,6 +228,10 @@ label #xout{
     margin: 0 auto;
 }
 
+.map h2 {
+    display: none;
+}
+
 
 /* For pets */
 .fi, .so, .hon, .ro, .lu {
@@ -265,6 +270,10 @@ h1{
     font-family: 'Oswald', 'Times New Roman';
     font-weight: bold;
     font-size: 43px;
+}
+
+.luimg #prev, .luimg #next, .roimg #prev1, .roimg #next1, .honimg #prev2, .honimg #next2, .soimg #prev3, .soimg #next3, .finnimg #prev4, .finnimg #next4{
+    display: none;
 }
 
 /* For Recipes */
@@ -316,8 +325,7 @@ ul li label{
 #main .pas .pastaimg #big{
     grid-row: 1/ span 2;
     grid-column: 2;
-    min-height: 350px;
-    padding-top: 45px;
+    height: 450px;
     max-width: 175px;
 }
 
@@ -345,9 +353,12 @@ ul li label{
 #main .cake .cakeimg #biggerimg{
     grid-row: 1/ span 2;
     grid-column: 2;
-    max-height: 300px;
+    height: 300px;
     max-width: 175px;
-    padding-top: 60px;
+}
+
+.allergens {
+    display: none;
 }
 
 /* Reduced motion media query */
@@ -468,6 +479,10 @@ ul li label{
         display: block;
     }
 
+    .luimg #prev, .luimg #next, .roimg #prev1, .roimg #next1, .honimg #prev2, .honimg #next2, .soimg #prev3, .soimg #next3, .finnimg #prev4, .finnimg #next4{
+        display: inline;
+    }
+
     #prev, #next, #prev1, #next1, #prev2, #next2, #prev3, #next3, #prev4, #next4  {
         background-color: rgb(50, 50, 150);
         font-family: 'Times New Roman', Times, serif;
@@ -488,27 +503,52 @@ ul li label{
     }
 
     /* For recipes */
+    #main .p {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .pasGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .pasGrid .pic {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .panGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .panGrid .pic{
+        display: flex;
+        width: 100%;
+    }
+
+    .cakeGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .cakeGrid .pic{
+        display: flex;
+        width: 100%;
+    }
+
     .pic {
         width: 50%;
         float: left;
         padding: 10px;
         max-width: 400px;
         max-height: 600px;
-    }
-  
-    .pan p {
-        margin-top: 130px;
-        margin-bottom: 130px;
-    }
-
-    .pas p {
-        margin-top: 150px;
-        margin-bottom: 160px;
-    }
-
-    .cake p {
-        margin-top: 180px;
-        margin-bottom: 180px;
     }
 
     .pas span, .pan span, .cake span {
@@ -704,10 +744,33 @@ ul li label{
     font-size: 20px;
     }
 
+    .map h2 {
+        display: block;
+    }
+
    /* For Recipes */
    #main .pic {
     padding-top: 0px;
    }
+
+   .pasGrid, .panGrid, .cakeGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .allergens {
+        display: block;
+    }
+
+    .allergens h4 {
+        display: block;
+        align-content: center;
+        padding-left: 220px;
+        font-size: 19px;
+    }
+
+    .pas h3, .pan h3, .cake h3 {
+        padding-top: 20px !important;
+    }
 
    .pic {
     width: 50%;
@@ -717,25 +780,14 @@ ul li label{
     max-height: 700px;
     }
 
-    .pan p {
-        margin-top: 130px;
-        margin-left: 10px;
-        margin-bottom: 220px;
-    }
-
-    .pas p {
-        margin-top: 150px;
-        margin-bottom: 250px;
-    }
-
-    .cake p {
-        margin-top: 180px;
-        margin-bottom: 220px;
-    }
-
     #main .pas .pastaimg{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #main .pas .pastaimg #big {
+        padding: 0px;
+        max-width: none;
     }
 
     #main .pas .pastaimg img{
@@ -748,12 +800,12 @@ ul li label{
     }
 
     #main img {
-        max-width: 500px;
+       max-width: 450px;
     }
 
     #main .pan .panimg{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        justify-content: space-between;
     }
 
     #main .pan .panimg img{
@@ -768,8 +820,8 @@ ul li label{
     }
 
     #main .cake .cakeimg{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        justify-content: space-between;
     }
 
     #main .cake .cakeimg img{
